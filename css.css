@@ -1,0 +1,488 @@
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-image: url(img/fundo3.jpg);
+    background-size: contain;
+    width: 90%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    
+}
+
+
+/* Inicio da edição do menu do site*/
+
+#header{
+
+    max-width: 100%;
+    position: relative;
+}
+
+.menu-super{
+    display: flex;
+    position: fixed;
+    width: 100%;
+    max-width: 90%;
+    justify-content: space-between;
+    color: white;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: 0.5rem solid white;
+    border-radius: 2rem;
+    z-index: 10;
+    background-image: url(img/fundo-menu.png);
+    background-size: contain;
+
+    
+}
+
+.logo{
+    
+    font-size: 2em;
+    padding-left: 1rem;
+    display: flex;
+    align-items: center;
+    text-shadow: 2px 2px 0 #3f4693;
+    font-weight: bold;
+    color: white;
+    
+}
+.logo-img{
+    width: 5em;
+    height: 5em;
+    padding: 10px;
+}
+.menu ul{
+    display: flex;
+    padding-right: 1rem;
+}
+.menu li{
+    list-style: none;
+    flex: 1;
+    padding: 5px;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-shadow: 2px 2px 0 #3f4693;
+    
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.menu li:hover{
+    text-shadow: 0px 1px 0px rgb(48, 57, 119);   
+}
+
+/* Fim da edição do menu do site*/
+
+/* Inicio da edição da seção de fotos*/
+
+main{
+    display: block;
+
+}
+.fotos-apresentacao{
+    
+    /*border: 8px double #bd8c6d;*/
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    overflow: visible;
+    display: flex;
+    padding-top: 15rem;
+
+}
+
+.fotos-apresentacao img{
+    width: 32%;
+    border: 0.5rem solid white;
+    border-radius: 2rem;
+    margin: 0.2rem;
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-delay: 0.2s;
+    margin-bottom: 1em;
+
+    /*border: 3px solid rgb(48, 57, 119);*/
+}
+
+
+.fotos-apresentacao img:hover{
+    transform: scale(1.2);
+}
+
+.sobre{
+    margin-top: 1em;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    border-top: 8px double black;
+    border-bottom: 8px double black;
+}
+
+.sobre h1{
+
+    text-transform: uppercase;
+    color: #3f4693;
+    text-shadow: 2px 2px 0 white;
+    font-size: 3rem;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.sobre p{
+    margin-top: 0;
+    font-size: 2rem;
+
+}
+.sobre button{
+    width: 25rem;
+    height: 5rem;
+    background-color: #6e5433;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    box-shadow: 2px 2px 3px black;
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-delay: 0.2s;
+}
+
+.sobre button a {
+    color: white;
+}
+
+.sobre button:hover{
+    background-color: #3f4693;
+    box-shadow: 0px 0px 10px 8px rgb(47, 165, 47);
+}
+
+/* Inicio dos informativos de pagamento, contato e visitas*/
+.informativos{
+    margin-top: 5.5rem;
+    display: flex;
+    border-bottom: 8px double black;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#atendimento{
+    margin: 1.5rem;
+    width: 30rem;
+    height: 20rem;
+    background-color: white;
+    border-radius: 1rem;
+    text-align: center;
+    position: relative;
+
+}
+#atendimento p{
+    margin-top: 4rem;
+    font-size: 2rem;
+    padding: 1rem;
+    overflow: hidden;
+
+}
+#atendimento img{
+    position: absolute;
+    width: 7rem;
+    height: 7rem;
+    left: 50%;
+    top: -50%;
+    transform: translate(-50%, 50%);
+    border: 8px solid white;
+    background-color: white;
+    border-radius: 2rem;
+
+}
+
+#pagamento{
+    margin: 1.5rem;
+    width: 30rem;
+    height: 20rem;
+    background-color: white;
+    border-radius: 1rem;
+    text-align: center;
+    position: relative;
+
+}
+#pagamento p{
+    margin-top: 4rem;
+    font-size: 2rem;
+    padding: 1rem;
+    overflow: hidden;
+
+}
+#pagamento img{
+    position: absolute;
+    width: 7rem;
+    height: 7rem;
+    left: 50%;
+    top: -50%;
+    transform: translate(-50%, 50%);
+    border: 8px solid white;
+    background-color: white;
+    border-radius: 2rem;
+
+}
+
+#contato{
+    margin: 1.5rem;
+    width: 30rem;
+    height: 20rem;
+    background-color: white;
+    border-radius: 1rem;
+    text-align: center;
+    position: relative;
+    
+
+}
+#contato p{
+    margin-top: 4rem;
+    font-size: 2rem;
+    padding: 1rem;
+    overflow: hidden;
+    
+}
+#contato img{
+    position: absolute;
+    width: 7rem;
+    height: 7rem;
+    left: 50%;
+    top: -50%;
+    transform: translate(-50%, 50%);
+    border: 8px solid white;
+    background-color: white;
+    border-radius: 2rem;
+}
+
+/* Inicio da galeria de fotos*/
+
+.fotos{
+    margin-top: 1rem;
+    display: inline-block;
+    border-bottom: 8px double black;
+    flex-wrap: wrap;
+    text-align: center;
+
+
+}
+
+.fotos h1{
+    text-transform: uppercase;
+    color: #3f4693;
+    text-shadow: 2px 2px 0 white;
+    font-size: 3rem;
+    font-weight: bold
+}
+.fotos img{
+    width: 30rem;
+    height: 30rem;
+    border: 0.5rem solid white;
+    border-radius: 2rem;
+    margin-bottom: 1rem;
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-delay: 0.2s;
+    margin: 0.5rem;
+}
+
+.fotos img:hover{
+    transform: scale(1.4);
+}
+
+.fotos button{ 
+    display: block; 
+    margin: 2rem auto;  
+    width: 15rem;
+    height: 5rem;
+    background-color: #6e5433;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    box-shadow: 2px 2px 3px black;
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-delay: 0.2s;
+}
+
+.fotos button a {
+    color: white;
+}
+
+.fotos button:hover{
+    background-color: #3f4693;
+    box-shadow: 0px 0px 10px 8px #6e5433;
+}
+
+
+/*Inicio do footer do site*/
+
+footer{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    background-image: url(img/fundo-menu.png);
+    background-size: contain;
+    border: 0.5rem solid white;
+    border-radius: 2rem;
+    margin-bottom: 1rem;
+    
+
+}
+
+#localizacao-footer{
+    width: 30%;
+    text-align: center;
+    margin-bottom: 1rem;
+    border-right: 8px double white;
+    padding: 1.5rem;
+    margin-top: 1rem;
+
+}
+
+#localizacao-footer img{
+    margin-top: 1rem;
+        width: 5rem;
+        height: 5rem;
+        margin-bottom: 1.5rem;
+}
+
+#localizacao-footer p{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+}
+
+#contato-footer{
+    width: 30%;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: white;
+    border-right: 8px double white;
+    padding: 1.5rem;
+    margin-top: 1rem;
+
+
+}
+
+#contato-footer img{
+        margin-top: 1rem;
+        width: 5rem;
+        height: 5rem;
+}
+
+
+#contato-footer h3{
+    font-size: 2rem;
+    margin-top: 0;
+    color: white;
+
+}
+
+#contato-footer h4{
+    font-size: 1.7rem;
+    margin-bottom: 0;
+
+}
+
+#contato-footer h6{
+    font-size: 1.5rem;
+    margin-top: 0;
+    color: white;
+}
+
+#redes-footer{
+    display: inline-block;
+    width: 30%;
+    text-align: center;
+    border-radius: 2rem;
+    margin-bottom: 1rem;
+
+}
+
+#redes-footer img{
+    margin-top: 1rem;
+    width: 5rem;
+    height: 5rem;
+    
+}
+
+#redes-footer h2{
+    font-size: 2rem;
+    color: white;
+}
+
+#redes-footer a img{
+    margin: 0.5rem 2rem;
+    width: 5rem;
+    height: 5rem;
+}
+/*Fim do footer do site*/
+
+/* Inicio dos estilos da página de fotos*/
+
+.pagina-fotos{
+    padding-top: 13rem;
+    width: 100%;
+    
+}
+
+.titulos-pagina-fotos{
+    display: block;
+    text-align: center;
+}
+
+.titulos-pagina-fotos h1{
+    text-transform: uppercase;
+    color: #3f4693;
+    text-shadow: 2px 2px 0 white;
+    font-size: 3rem;
+    display: inline-block;
+    font-weight: bold;
+
+}
+
+.fotos-moveisComerciais{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.fotos-moveisComerciais img{
+
+    width: 30rem;
+    height: 30rem;
+    border: 0.5rem solid white;
+    border-radius: 2rem;
+    margin: 0.5rem;
+}
+
+.fotos-moveisResidenciais{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.fotos-moveisResidenciais img{
+
+    width: 30rem;
+    height: 30rem;
+    border: 0.5rem solid white;
+    border-radius: 2rem;
+    margin: 0.5rem;
+}
+
+.pagina-fotos img{
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-delay: 0.2s;
+}
+
+.pagina-fotos img:hover{
+    transform: scale(1.6);
+}
